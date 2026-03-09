@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=no">
+   
+   <title>SnapMatch Grand Wedding 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+<!-- ═══════════════════════ PAGE 1 — GUEST ═══════════════════════ -->
+<div class="page active" id="page-guest">
+  <header class="hdr">
+    <div class="logo">
+      <div class="logo-icon">📸</div>
+      SnapMatch
+    </div>
+    <div class="hdr-right">
+      <nav class="dot-nav" id="dnav1">
+        <button class="dnav" title="Guest" onclick="goPage(1)"></button>
+        <button class="dnav active" title="Admin" onclick="goPage(2)"></button>
+        <button class="dnav" title="Results" onclick="goPage(3)"></button>
+      </nav>
+      <button class="pill" onclick="goPage(2)">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        Admin
+      </button>
+    </div>
+  </header>
+
+  <div class="page-scroll">
+    <section class="hero">
+      <div class="badge">⭐ Grand Wedding 2026</div>
+      <h1 class="htitle">
+        <span class="c1">Find your<br></span>
+        <span class="c2">photos</span><br>
+        <span class="c3">instantly.</span>
+      </h1>
+      <p class="hsub">AI-powered face recognition finds every photo with you in seconds — no searching needed.</p>
+      <button class="cta-btn" onclick="openScanModal()">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        Scan My Face →
+      </button>
+      <p class="privacy">Your selfie is never stored &nbsp;·&nbsp; 100% private</p>
+      <div class="radar-wrap">
+        <div class="rring"></div><div class="rring"></div><div class="rring"></div><div class="rring"></div>
+        <div class="rface"></div>
+        <div class="rlabel">face</div>
+        <div class="rdot"></div>
+      </div>
+    </section>
+    <section class="sec">
+      <p class="sec-title">How it works</p>
+      <div class="step-card">
+        <span class="snum">01</span>
+        <div class="sico">📷</div>
+        <div class="stxt"><h3>Upload Selfie</h3><p>Take a quick selfie from your phone camera.</p></div>
+      </div>
+      <div class="step-card">
+        <span class="snum">02</span>
+        <div class="sico g">⚡</div>
+        <div class="stxt"><h3>AI Scans</h3><p>Our model matches your face across 1,200+ photos in seconds.</p></div>
+      </div>
+      <div class="step-card">
+        <span class="snum">03</span>
+        <div class="sico b">⬇️</div>
+        <div class="stxt"><h3>Get Your Photos</h3><p>Instantly view and download every photo of you.</p></div>
+      </div>
+      <button class="find-btn" onclick="openScanModal()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        Find My Photos Now
+      </button>
+    </section>
+  </div>
+</div>
+
+<!-- ═══════════════════════ PAGE 2 — ADMIN ═══════════════════════ -->
+<div class="page" id="page-admin">
+  <header class="hdr">
+    <div class="logo">
+      <div class="logo-icon">📸</div>
+      SnapMatch
+    </div>
+    <div class="hdr-right">
+      <nav class="dot-nav" id="dnav2">
+        <button class="dnav" title="Guest" onclick="goPage(1)"></button>
+        <button class="dnav active" title="Admin" onclick="goPage(2)"></button>
+        <button class="dnav" title="Results" onclick="goPage(3)"></button>
+      </nav>
+      <button class="pill" onclick="goPage(2)">Admin</button>
+      <button class="pill primary" onclick="goPage(1)">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Guest View
+      </button>
+    </div>
+  </header>
+
+  <div class="page-scroll">
+    <div class="admin-body">
+      <div class="event-label">Active Event</div>
+      <div class="event-title">Grand Wedding<br>2026</div>
+      <div class="event-meta">Feb 18, 2026 · Jaipur, Rajasthan</div>
+
+      <div class="stat-big">
+        <div class="stat-ico blue">🖼️</div>
+        <div class="stat-info"><div class="stat-lbl">Total Photos</div><div class="stat-val">0</div></div>
+        <span class="stat-badge blue">+today</span>
+      </div>
+      <div class="stat-big">
+        <div class="stat-ico teal">🔍</div>
+        <div class="stat-info"><div class="stat-lbl">Faces Detected</div><div class="stat-val">0</div></div>
+        <span class="stat-badge teal">98.4% accuracy</span>
+      </div>
+      <div class="stat-big">
+        <div class="stat-ico red">👥</div>
+        <div class="stat-info"><div class="stat-lbl">Unique People</div><div class="stat-val">0</div></div>
+        <span class="stat-badge red">Across all photos</span>
+      </div>
+
+      <div class="idx-card">
+        <div class="idx-top"><div class="idx-title">Indexing Progress</div><div class="live-dot">Live</div></div>
+        <div class="idx-sub" id="idx-sub">Process...</div>
+        <div class="pbar"><div class="pfill" id="idx-fill" style="width:0%"></div></div>
+        <div class="plabels"><span>0</span><span class="pct" id="idx-pct">0</span><span>100</span></div>
+      </div>
+
+      <div class="upload-sec-title" style="margin-top:4px">Upload Photos</div>
+      <div class="drop-zone" id="drop-zone"
+        onclick="document.getElementById('admin-up').click()"
+        ondragover="dzOver(event)" ondragleave="dzLeave()" ondrop="dzDrop(event)">
+        <div class="drop-ico">⬆️</div>
+        <div class="drop-t">Drag &amp; Drop Photos</div>
+        <div class="drop-s">or click to browse · JPG, PNG, HEIC · Max 50MB each</div>
+        <button class="browse-btn">Browse Files</button>
+      </div>
+      <input type="file" id="admin-up" multiple accept="image/*" style="display:none" onchange="handleAdminUp(event)">
+
+      <div class="recent-t">Recently Uploaded</div>
+      <div class="recent-grid" id="recent-grid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════ PAGE 3 — RESULTS ═══════════════════════ -->
+<div class="page" id="page-results">
+  <header class="res-hdr">
+    <button class="exit-btn" onclick="goPage(1)">✕ Exit</button>
+    <nav class="dot-nav" id="dnav3">
+      <button class="dnav" title="Guest" onclick="goPage(1)"></button>
+      <button class="dnav" title="Admin" onclick="goPage(2)"></button>
+      <button class="dnav active" title="Results" onclick="goPage(3)"></button>
+    </nav>
+    <div class="vtoggle">
+      <div class="vt" id="vt-float" onclick="setView('float')" title="Float view">⊞</div>
+      <div class="vt active" id="vt-grid" onclick="setView('grid')" title="Grid view">⧉</div>
+    </div>
+  </header>
+
+  <div class="page-scroll">
+    <div class="res-body">
+      <div class="res-hl">We found <span id="found-n">0</span> photos<br>of you!</div>
+      <div class="res-meta">From Grand Wedding 2026 · Tap to preview · Swipe to browse</div>
+
+      <!-- FLOATING layout (default — matches screenshot) -->
+      <div class="photos-float" id="photos-float"></div>
+
+      <!-- GRID layout (toggle) -->
+      <div class="photos-grid-view" id="photos-grid"></div>
+    </div>
+  </div>
+
+  <footer class="res-footer">
+    <button class="dl-btn" onclick="dlAll()">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <span id="dl-lbl">Download All Photos</span>
+    </button>
+    <button class="share-btn" onclick="shareIt()">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+    </button>
+  </footer>
+</div>
+
+<!-- ═══════════════════════ SCAN MODAL ═══════════════════════ -->
+<div class="overlay" id="scan-overlay">
+  <div class="modal">
+    <div class="scan-ov" id="scan-ov">
+      <div class="spin-ring"></div>
+      <div class="spct" id="spct">0%</div>
+      <p class="smsg">Scanning 1,200+ photos…</p>
+    </div>
+    <button class="modal-close" onclick="closeScan()">✕</button>
+    <h2>Scan Your Face</h2>
+    <p class="msub">Take a selfie or upload a photo to find all your wedding pictures.</p>
+    <div class="cam-area" id="cam-area" onclick="trigFile()">
+      <video id="m-video" autoplay playsinline style="display:none"></video>
+      <img id="m-preview" alt="">
+      <div class="cam-ph" id="cam-ph">
+        <div class="ci">📷</div>
+        <p class="ch">Tap to take photo or upload</p>
+      </div>
+    </div>
+    <input type="file" id="m-file" accept="image/*" capture="user" onchange="handleSelfie(event)">
+    <div class="macts">
+      <button class="mbtn-s" id="cam-btn" onclick="toggleCam()">Open Camera</button>
+      <button class="mbtn-p" onclick="startScan()">Scan Now →</button>
+    </div>
+  </div>
+</div>
+<script src="/static/js/app.js"></script>
+</body>
+</html> 
