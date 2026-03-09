@@ -29,11 +29,13 @@ def cosine_similarity(vec_a, vec_b):
 
     return float(np.dot(a, b) / (a_norm * b_norm))
 
-
 @app.route("/")
-def serve_frontend():
-    return send_from_directory("../frontend", "index.html")
+def home():
+    return { "message": "snapmatch backend is running" }
 
+@app.route("/health")
+def health_check():
+    return { "status": "healthy" }
 
 @app.route("/admin/upload", methods=["POST"])
 def upload_photos():
