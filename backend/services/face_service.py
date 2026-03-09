@@ -3,8 +3,8 @@ import numpy as np
 from insightface.app import FaceAnalysis
 
 # load model once
-face_app = FaceAnalysis(name="buffalo_l")
-face_app.prepare(ctx_id=0)  # GPU, CPU ke liye -1
+face_app = FaceAnalysis(name="buffalo_s", providers=["CPUExecutionProvider"])
+face_app.prepare(ctx_id=-1, det_size=(320, 320))  # GPU, CPU ke liye -1
 
 
 def read_image_from_file(file):
