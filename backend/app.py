@@ -11,9 +11,7 @@ from services.milvus_service import search_embedding, collection
 from config import EVENT_PHOTO_DIR
 
 
-app = Flask(__name__, static_folder="../frontend", static_url_path="/static")
-CORS(app)
-
+app = Flask(__name__)
 print("SnapMatch Backend Running")
 
 
